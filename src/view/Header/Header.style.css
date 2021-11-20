@@ -42,7 +42,7 @@
 }
 
 
-@media (max-width:500px){
+@media (min-width:500px){
     .header-link-1 {
         font-size: 100%;
         flex-direction: column;

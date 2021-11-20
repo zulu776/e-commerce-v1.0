@@ -11,7 +11,7 @@
     background-color: black;
 }
 
-@media (max-width:500px){
+@media (min-width:500px){
     .checkout-container {
         margin-top: 20%;
         height: 100%;

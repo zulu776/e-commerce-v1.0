@@ -16,7 +16,7 @@
     background-color: black;
 }
 
-@media (max-width:414px){
+@media (min-width:500px){
     .cart-img{
         display:none
     }
