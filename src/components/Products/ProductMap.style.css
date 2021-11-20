@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gemunu Libre";
+    src: url(
+    'https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap'
+    );
+}
+
+.productmap-container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.productmap-img {
+    width: 60%;
+    height: 60%;
+}
+
+.productmap-p1 {
+    height: 90px;
+    font-family: "Gemunu Libre";
+    font-size: 150%;
+    color: white;
+}
+
+.productmap-p2 {
+    font-family: "Gemunu Libre";
+    font-size: 100%;
+    color: white;
+    margin: 0 5% 0 5%   ;
+}
+
+.productmap-button {
+    width: 35%;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bolder;
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../../IMG/BG-flame.jpg");
+    background-size:cover;
+}
+
+.products-try{
+    color: white ;
+}

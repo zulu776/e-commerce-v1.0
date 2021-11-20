@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.checkout-container {
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+@media (max-width:500px){
+    .checkout-container {
+        margin-top: 20%;
+        height: 100%;
+        justify-content: center;
+    }
+    .form-container{
+        width: 90%;
+        margin-top: 10%;
+    }
+}
+

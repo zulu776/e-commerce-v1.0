@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../IMG/BG-flame.jpg");
+    background-size:cover;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-intro {
+    font-size: 30px;
+    font-family: "Gemunu Libre";
+    color: white;
+    
+}
+
+.home-mtg {
+    width: 60%;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.home-title {
+    font-size: 30px;
+    font-family: "Gemunu Libre";
+    color: white;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   
+
+}
+
+@keyframes colorchange {
+    0%   {color: #e25e47;}
+    25%  {color: #FFD064;}
+    50%  {color: #E7A52E;}
+    75%  {color: #E27D47;}
+    100% {color: #ECC32E;}
+  }
