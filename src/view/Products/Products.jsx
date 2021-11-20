@@ -10,7 +10,7 @@ const Products = () => {
 
     return (
         <div>
-            <div className="flex flex-wrap justify-center bg-black">
+            <div className="flex flex-wrap justify-center bg-black mt-20">
                {ProductsList &&
                ProductsList.products &&
                ProductsList.products.map(product => (

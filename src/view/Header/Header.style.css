@@ -38,11 +38,10 @@
 
 .header-link-1-img{
     width: 40%;
-    /* height: 20px; */
 }
 
 
-@media (min-width:500px){
+@media (max-width:500px){
     .header-link-1 {
         font-size: 100%;
         flex-direction: column;
