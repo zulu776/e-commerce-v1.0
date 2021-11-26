@@ -10,6 +10,7 @@ const TableCart = ({ children}) => {
 
     const { state } = useContext(ListShopCartContext);
 
+    // console.log(state.cart)
 
     return (
         <div className="container-tablecart">
@@ -22,13 +23,14 @@ const TableCart = ({ children}) => {
               <th className="cart-img">Product Image</th>
               <th>Description</th>
               <th>$</th>
+              <th>Qty</th>
               <th>Remove</th>
             </tr>
           </thead>
           <tbody>
           { children }
             <tr>
-              <td colSpan="7">Total: ${state.totalPrice}</td>
+              <td colSpan="7">Total: ${Intl.NumberFormat("de-DE").format(state.totalPrice)}</td>
             </tr>
           </tbody>
         </Table>

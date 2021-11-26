@@ -12,6 +12,13 @@ import "./Header.style.css"
 
 
 const Header = ({ img, total, cart }) => {
+
+    let counter = 0;
+
+    for( let i = 0; i<cart.length; i++){
+        counter= counter + cart[i].qty;
+    }
+
     return (
         <Navbar bg="dark" variant="dark" fixed="top">
             <Container>
@@ -47,7 +54,7 @@ const Header = ({ img, total, cart }) => {
                 <Nav className="header-total">
                     <Navbar.Text className="header-sep">
                         <p className="header-link-1">
-                        Cart: {cart.length}
+                        Cart: {counter}
                         </p>
                     </Navbar.Text>
 

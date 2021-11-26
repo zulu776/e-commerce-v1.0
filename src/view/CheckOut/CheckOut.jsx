@@ -82,6 +82,7 @@ const CheckOut = () => {
                         />
                         </td>
                         <td>{product.desc}</td>
+                        <td>{product.qty}</td>
                         <td>{Intl.NumberFormat("de-DE").format(product.price)}</td>
                     </tr>
                     ))}

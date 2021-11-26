@@ -17,7 +17,7 @@ const ProductMap = ({ name, desc, price, id, img }) => {
             desc, 
             price, 
             id, 
-            img
+            img,
         })  
 
         // eslint-disable-next-line react-hooks/exhaustive-deps 

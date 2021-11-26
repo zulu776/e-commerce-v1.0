@@ -20,13 +20,14 @@ const CheckoutTable = ({children}) => {
                     <th>Product Name</th>
                     <th className="cart-img">Product Image</th>
                     <th>Description</th>
+                    <th>Qty</th>
                     <th>$</th>
                     </tr>
                 </thead>
                 <tbody>
                 { children }
                     <tr>
-                    <td colSpan="7">Total: ${state.totalPrice}</td>
+                    <td colSpan="7">Total: ${Intl.NumberFormat("de-DE").format(state.totalPrice)}</td>
                     </tr>
                 </tbody>
                 </Table>

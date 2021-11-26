@@ -13,18 +13,36 @@ const initialState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD":
-            return {
+            const cartItem = state.cart.find((item) => item.id === action.payload.id )
+            return cartItem ?{
                 ...state,
                 totalPrice: state.totalPrice + action.payload.price,
-                cart: [...state.cart, action.payload]
+                cart: state.cart.map(item => item.id === action.payload.id ? 
+                    {...item,qty: item.qty + 1} : item)
+            }
+            : {
+                ...state,
+                totalPrice: state.totalPrice + action.payload.price,
+                cart: [...state?.cart, {...action.payload, qty: 1}]
             };
 
         case "REMOVE": 
-            return {
+            const deleteItem = state.cart.find((item) => item.id === action.payload.id )
+            
+            return deleteItem.qty > 1 ?
+            {
                 ...state,
                 totalPrice: state.totalPrice - action.payload.price,
-                cart: state.cart
+                cart:state.cart.map(item => item.id === action.payload.id ? 
+                    {...item,qty: item.qty - 1} : item)
             }
+            :{
+                ...state,
+                totalPrice: state.totalPrice - action.payload.price, 
+                cart: state.cart.filter(item => item.id !== action.payload.id)
+            }
+
+
 
         default:
             return state;

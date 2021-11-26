@@ -21,7 +21,6 @@ const CartShop = () => {
             index: index
             }
         })
-        state.cart.splice(index,1)
     }
 
     
@@ -43,6 +42,7 @@ const CartShop = () => {
                     </td>
                     <td>{product.desc}</td>
                     <td>{Intl.NumberFormat("de-DE").format(product.price)}</td>
+                    <td>{product.qty}</td>
                     <td>
                     <Button
                         variant="danger"

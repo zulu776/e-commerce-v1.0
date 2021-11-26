@@ -11,6 +11,7 @@ const HeaderMain = ({children}) => {
 
     const { state: cartState } = useContext(ListShopCartContext);
 
+    
     return (
        <>
         <Header 
